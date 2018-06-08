@@ -3,6 +3,7 @@
 <head>
     <meta name="layout" content="main"/>
     <title>Welcome to Grails</title>
+    <asset:stylesheet src="test.css"/>
 </head>
 <body>
     <content tag="nav">

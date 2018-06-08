@@ -55,6 +55,8 @@ dependencies {
     testCompile "org.seleniumhq.selenium:selenium-support:3.6.0"
     testRuntime "org.seleniumhq.selenium:selenium-chrome-driver:3.6.0"
     testRuntime "org.seleniumhq.selenium:selenium-firefox-driver:3.6.0"
+
+    assets "com.bertramlabs.plugins:less-asset-pipeline:2.14.8"
 }
 
 bootRun {
@@ -78,4 +80,8 @@ tasks.withType(Test) {
 assets {
     minifyJs = true
     minifyCss = true
+}
+
+integrationTest {
+    systemProperties System.properties
 }
